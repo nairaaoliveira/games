@@ -49,5 +49,3 @@ def game_detail(request, pk):
 			game.delete()
 			return Response(status=status.HTTP_204_NO_CONTENT)
 		return Response({"release_date": "Jogo não lancado. Nao pode ser excluido!"}, status=status.HTTP_403_FORBIDDEN)
-
-
